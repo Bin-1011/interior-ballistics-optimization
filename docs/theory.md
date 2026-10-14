@@ -68,7 +68,9 @@
 
 ## 3. 参数封装模块
 
-实现：`src/ballistic_design.m`（对应论文 3.3.1 节、图 3.1）
+实现：`src/ballistic_design.m`（对应论文 3.3.1 节）
+
+![参数封装模块流程](figures/fig3-01-parameter-encapsulation-flow.png)
 
 ### 3.1 起始参量与装填量
 
@@ -218,7 +220,9 @@ options = odeset('MaxStep', 1e-4, 'RelTol', 1e-6);
 
 ## 6. 常规设计：二分查找反解火药弧厚
 
-实现：`src/binary_search_e1.m`（对应论文 3.3.2 节、图 3.2）
+实现：`src/binary_search_e1.m`（对应论文 3.3.2 节）
+
+![二分查找流程](figures/fig3-02-bisection-search-flow.png)
 
 由"火药弧厚 $e_1$ 与设计膛压 $p_m$ 在一定范围内近似线性"的物理特性，
 以二分法求解 $p_{\max}(e_1) = p_m$：
@@ -242,7 +246,9 @@ $$
 
 ## 7. 多目标优化
 
-实现：`src/multi_objective_optimization.m`（对应论文 3.4 节、图 3.3）
+实现：`src/multi_objective_optimization.m`（对应论文 3.4 节）
+
+![多目标优化流程](figures/fig3-03-multiobjective-optimization-flow.png)
 
 ### 7.1 优化模型
 
@@ -321,5 +327,6 @@ options = optimoptions('gamultiobj', ...
    随装药量联动——因此优化改变 $\eta$ 时药室容积随之变化，这是本模型的建模选择。
 4. **变量命名细节**：`solve_ballistic.m` 中的 `l_0` 是**行程初值**（= 0），
    与 `params.l0`（等效圆柱体长度）不是同一个量。
-5. **历史版本**：早期版本（`legacy/00`、`legacy/02`）采用无量纲化变量与
-   `global` 传参，量纲约定与最终版不同，详见 [legacy/README.md](../legacy/README.md)。
+5. **57 mm 案例的参数**：仓库中的 `ballistic_design.m` 是 152 mm 榴弹炮配置。
+   若要复现 57 mm 高射炮案例，各字面量见 [results.md](results.md) 第 1 节，
+   其中药粒半长 `c` 应取 `7.25e-3` m，须与 `e1`、`D0`、`d0` 保持同一单位（米）。

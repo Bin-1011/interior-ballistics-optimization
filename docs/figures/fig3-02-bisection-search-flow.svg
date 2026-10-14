@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 1140" width="1100" height="1140" role="img">
+  <defs>
+    <marker id="ah" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M 0,0.6 L 10,5 L 0,9.4 z" fill="#8A94A3"/>
+    </marker>
+    <filter id="sh" x="-25%" y="-25%" width="150%" height="160%">
+      <feDropShadow dx="0" dy="1.4" stdDeviation="2.2" flood-color="#0F172A" flood-opacity="0.10"/>
+    </filter>
+  </defs>
+  <rect x="0" y="0" width="1100" height="1140" fill="#FFFFFF"/>
+    <rect x="190.0" y="32.0" width="460" height="60" rx="30.0" fill="#E8F0FE" stroke="#3B6FD4" stroke-width="1.6" filter="url(#sh)"/>
+  <text x="420.0" y="67.2" font-family="Microsoft YaHei, PingFang SC, Hiragino Sans GB, Noto Sans CJK SC, Source Han Sans SC, DengXian, SimHei, sans-serif" font-size="15.0" font-weight="600" fill="#1F2937" text-anchor="middle">二分法反解火药弧厚 e1</text>
+  <rect x="200.0" y="118.0" width="440" height="88" rx="14" fill="#FFFFFF" stroke="#C3CCD9" stroke-width="1.6" filter="url(#sh)"/>
+  <text x="420.0" y="146.2" font-family="Microsoft YaHei, PingFang SC, Hiragino Sans GB, Noto Sans CJK SC, Source Han Sans SC, DengXian, SimHei, sans-serif" font-size="15" font-weight="600" fill="#1F2937" text-anchor="middle">① 设定固定量与搜索区间</text>
+  <text x="420.0" y="166.6" font-family="Microsoft YaHei, PingFang SC, Hiragino Sans GB, Noto Sans CJK SC, Source Han Sans SC, DengXian, SimHei, sans-serif" font-size="13" font-weight="400" fill="#5B6675" text-anchor="middle">η = 1500 kJ/kg ，e1 ∈ [5e-5, 5e-2] m</text>
+  <text x="420.0" y="187.6" font-family="Microsoft YaHei, PingFang SC, Hiragino Sans GB, Noto Sans CJK SC, Source Han Sans SC, DengXian, SimHei, sans-serif" font-size="13" font-weight="400" fill="#5B6675" text-anchor="middle">压力容差 1 kPa ，最大迭代 100 次</text>
+  <rect x="200.0" y="263.0" width="440" height="58" rx="14" fill="#FFFFFF" stroke="#C3CCD9" stroke-width="1.6" filter="url(#sh)"/>
+  <text x="420.0" y="297.2" font-family="Microsoft YaHei, PingFang SC, Hiragino Sans GB, Noto Sans CJK SC, Source Han Sans SC, DengXian, SimHei, sans-serif" font-size="15.0" font-weight="600" fill="#1F2937" text-anchor="middle">② 取区间中点  e1 ← (e1_bottom + e1_top) / 2</text>
+  <rect x="200.0" y="358.0" width="440" height="88" rx="14" fill="#FFFFFF" stroke="#C3CCD9" stroke-width="1.6" filter="url(#sh)"/>
+  <text x="420.0" y="386.2" font-family="Microsoft YaHei, PingFang SC, Hiragino Sans GB, Noto Sans CJK SC, Source Han Sans SC, DengXian, SimHei, sans-serif" font-size="15" font-weight="600" fill="#1F2937" text-anchor="middle">③ 求解内弹道</text>
+  <text x="420.0" y="406.6" font-family="Microsoft YaHei, PingFang SC, Hiragino Sans GB, Noto Sans CJK SC, Source Han Sans SC, DengXian, SimHei, sans-serif" font-size="13" font-weight="400" fill="#5B6675" text-anchor="middle">ballistic_design(e1, η) → solve_ballistic</text>
+  <text x="420.0" y="427.6" font-family="Microsoft YaHei, PingFang SC, Hiragino Sans GB, Noto Sans CJK SC, Source Han Sans SC, DengXian, SimHei, sans-serif" font-size="13" font-weight="400" fill="#5B6675" text-anchor="middle">p_max ← max(p)</text>
+  <rect x="200.0" y="483.0" width="440" height="58" rx="14" fill="#FFFFFF" stroke="#C3CCD9" stroke-width="1.6" filter="url(#sh)"/>
+  <text x="420.0" y="517.2" font-family="Microsoft YaHei, PingFang SC, Hiragino Sans GB, Noto Sans CJK SC, Source Han Sans SC, DengXian, SimHei, sans-serif" font-size="15.0" font-weight="600" fill="#1F2937" text-anchor="middle">④ 计算压力偏差  dp ← p_max − p_m</text>
+  <polygon points="420,570 610,642 420,714 230,642" fill="#FFF6E6" stroke="#E0912A" stroke-width="1.6" filter="url(#sh)"/>
+  <text x="420.0" y="647.2" font-family="Microsoft YaHei, PingFang SC, Hiragino Sans GB, Noto Sans CJK SC, Source Han Sans SC, DengXian, SimHei, sans-serif" font-size="15.0" font-weight="600" fill="#1F2937" text-anchor="middle">⑤ |dp| &lt; 1 kPa ？</text>
+  <rect x="715.0" y="610.0" width="350" height="64" rx="32.0" fill="#E9F7EF" stroke="#1E9E6A" stroke-width="1.6" filter="url(#sh)"/>
+  <text x="890.0" y="647.2" font-family="Microsoft YaHei, PingFang SC, Hiragino Sans GB, Noto Sans CJK SC, Source Han Sans SC, DengXian, SimHei, sans-serif" font-size="15.0" font-weight="600" fill="#1F2937" text-anchor="middle">输出 e1、params 与内弹道解</text>
+  <polygon points="420,748 595,818 420,888 245,818" fill="#FFF6E6" stroke="#E0912A" stroke-width="1.6" filter="url(#sh)"/>
+  <text x="420.0" y="823.2" font-family="Microsoft YaHei, PingFang SC, Hiragino Sans GB, Noto Sans CJK SC, Source Han Sans SC, DengXian, SimHei, sans-serif" font-size="15.0" font-weight="600" fill="#1F2937" text-anchor="middle">⑥ dp &gt; 0 ？</text>
+  <rect x="95.0" y="929.0" width="350" height="86" rx="14" fill="#FDECEC" stroke="#D9534F" stroke-width="1.6" filter="url(#sh)"/>
+  <text x="270.0" y="966.8" font-family="Microsoft YaHei, PingFang SC, Hiragino Sans GB, Noto Sans CJK SC, Source Han Sans SC, DengXian, SimHei, sans-serif" font-size="15.0" font-weight="600" fill="#1F2937" text-anchor="middle">e1_bottom ← e1</text>
+  <text x="270.0" y="987.8" font-family="Microsoft YaHei, PingFang SC, Hiragino Sans GB, Noto Sans CJK SC, Source Han Sans SC, DengXian, SimHei, sans-serif" font-size="15.0" font-weight="400" fill="#5B6675" text-anchor="middle">（压力偏高，抬升下界）</text>
+  <rect x="565.0" y="929.0" width="350" height="86" rx="14" fill="#FDECEC" stroke="#D9534F" stroke-width="1.6" filter="url(#sh)"/>
+  <text x="740.0" y="966.8" font-family="Microsoft YaHei, PingFang SC, Hiragino Sans GB, Noto Sans CJK SC, Source Han Sans SC, DengXian, SimHei, sans-serif" font-size="15.0" font-weight="600" fill="#1F2937" text-anchor="middle">e1_top ← e1</text>
+  <text x="740.0" y="987.8" font-family="Microsoft YaHei, PingFang SC, Hiragino Sans GB, Noto Sans CJK SC, Source Han Sans SC, DengXian, SimHei, sans-serif" font-size="15.0" font-weight="400" fill="#5B6675" text-anchor="middle">（压力偏低，压低上界）</text>
+  <path d="M 420.0,92.0 L 420.0,118.0" fill="none" stroke="#8A94A3" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#ah)"/>
+  <path d="M 420.0,206.0 L 420.0,263.0" fill="none" stroke="#8A94A3" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#ah)"/>
+  <path d="M 420.0,321.0 L 420.0,358.0" fill="none" stroke="#8A94A3" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#ah)"/>
+  <path d="M 420.0,446.0 L 420.0,483.0" fill="none" stroke="#8A94A3" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#ah)"/>
+  <path d="M 420.0,541.0 L 420.0,570.0" fill="none" stroke="#8A94A3" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#ah)"/>
+  <path d="M 610.0,642.0 L 715.0,642.0" fill="none" stroke="#8A94A3" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#ah)"/>
+  <text x="654" y="628" font-family="Microsoft YaHei, PingFang SC, Hiragino Sans GB, Noto Sans CJK SC, Source Han Sans SC, DengXian, SimHei, sans-serif" font-size="13" fill="#5B6675" text-anchor="middle">是</text>
+  <path d="M 420.0,714.0 L 420.0,748.0" fill="none" stroke="#8A94A3" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#ah)"/>
+  <text x="442" y="738" font-family="Microsoft YaHei, PingFang SC, Hiragino Sans GB, Noto Sans CJK SC, Source Han Sans SC, DengXian, SimHei, sans-serif" font-size="13" fill="#5B6675" text-anchor="start">否</text>
+  <path d="M 245.0,818.0 L 270.0,818.0 L 270.0,929.0" fill="none" stroke="#8A94A3" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#ah)"/>
+  <text x="212" y="804" font-family="Microsoft YaHei, PingFang SC, Hiragino Sans GB, Noto Sans CJK SC, Source Han Sans SC, DengXian, SimHei, sans-serif" font-size="13" fill="#5B6675" text-anchor="middle">是</text>
+  <path d="M 595.0,818.0 L 740.0,818.0 L 740.0,929.0" fill="none" stroke="#8A94A3" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#ah)"/>
+  <text x="628" y="804" font-family="Microsoft YaHei, PingFang SC, Hiragino Sans GB, Noto Sans CJK SC, Source Han Sans SC, DengXian, SimHei, sans-serif" font-size="13" fill="#5B6675" text-anchor="middle">否</text>
+  <path d="M 740.0,1015.0 L 740.0,1078.0 L 270.0,1078.0" fill="none" stroke="#8A94A3" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/>
+  <circle cx="270" cy="1078" r="3.4" fill="#8A94A3"/>
+  <path d="M 270.0,1015.0 L 270.0,1078.0 L 86.0,1078.0 L 86.0,292.0 L 200.0,292.0" fill="none" stroke="#8A94A3" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#ah)"/>
+</svg>

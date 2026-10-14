@@ -16,8 +16,7 @@
 %           pareto_front     — Pareto 非劣解集（决策变量空间）
 %
 % 依赖：Global Optimization Toolbox；'UseParallel' = true 时还需
-%       Parallel Computing Toolbox。若无该工具箱，请将 'UseParallel' 改为
-%       false（legacy/03-test-version/ 中即为该配置）。
+%       Parallel Computing Toolbox。若无该工具箱，请将 'UseParallel' 改为 false。
 % =========================================================================
 function [best_eta, best_e1, fval, pareto_front] = multi_objective_optimization()
     % 设置多目标优化的选项

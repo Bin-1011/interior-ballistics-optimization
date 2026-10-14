@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 760" width="700" height="760" role="img">
+  <defs>
+    <marker id="ah" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M 0,0.6 L 10,5 L 0,9.4 z" fill="#8A94A3"/>
+    </marker>
+    <filter id="sh" x="-25%" y="-25%" width="150%" height="160%">
+      <feDropShadow dx="0" dy="1.4" stdDeviation="2.2" flood-color="#0F172A" flood-opacity="0.10"/>
+    </filter>
+  </defs>
+  <rect x="0" y="0" width="700" height="760" fill="#FFFFFF"/>
+    <rect x="140.0" y="32.0" width="420" height="60" rx="30.0" fill="#E8F0FE" stroke="#3B6FD4" stroke-width="1.6" filter="url(#sh)"/>
+  <text x="350.0" y="67.2" font-family="Microsoft YaHei, PingFang SC, Hiragino Sans GB, Noto Sans CJK SC, Source Han Sans SC, DengXian, SimHei, sans-serif" font-size="15.0" font-weight="600" fill="#1F2937" text-anchor="middle">输入：火药弧厚 e1、装药利用系数 η</text>
+  <rect x="70.0" y="132.0" width="560" height="76" rx="14" fill="#FFFFFF" stroke="#C3CCD9" stroke-width="1.6" filter="url(#sh)"/>
+  <text x="350.0" y="164.8" font-family="Microsoft YaHei, PingFang SC, Hiragino Sans GB, Noto Sans CJK SC, Source Han Sans SC, DengXian, SimHei, sans-serif" font-size="15.0" font-weight="600" fill="#1F2937" text-anchor="middle">① 读取火炮战术指标</text>
+  <text x="350.0" y="185.8" font-family="Microsoft YaHei, PingFang SC, Hiragino Sans GB, Noto Sans CJK SC, Source Han Sans SC, DengXian, SimHei, sans-serif" font-size="15.0" font-weight="400" fill="#5B6675" text-anchor="middle">d、m、v_g、P_mT、χ_k、Δ、λ_g、φ1</text>
+  <rect x="70.0" y="244.0" width="560" height="76" rx="14" fill="#FFFFFF" stroke="#C3CCD9" stroke-width="1.6" filter="url(#sh)"/>
+  <text x="350.0" y="276.8" font-family="Microsoft YaHei, PingFang SC, Hiragino Sans GB, Noto Sans CJK SC, Source Han Sans SC, DengXian, SimHei, sans-serif" font-size="15.0" font-weight="600" fill="#1F2937" text-anchor="middle">② 计算装填与几何参数</text>
+  <text x="350.0" y="297.8" font-family="Microsoft YaHei, PingFang SC, Hiragino Sans GB, Noto Sans CJK SC, Source Han Sans SC, DengXian, SimHei, sans-serif" font-size="15.0" font-weight="400" fill="#5B6675" text-anchor="middle">ω、V0、S、l0</text>
+  <rect x="70.0" y="356.0" width="560" height="76" rx="14" fill="#FFFFFF" stroke="#C3CCD9" stroke-width="1.6" filter="url(#sh)"/>
+  <text x="350.0" y="388.8" font-family="Microsoft YaHei, PingFang SC, Hiragino Sans GB, Noto Sans CJK SC, Source Han Sans SC, DengXian, SimHei, sans-serif" font-size="15.0" font-weight="600" fill="#1F2937" text-anchor="middle">③ 计算装药相关系数</text>
+  <text x="350.0" y="409.8" font-family="Microsoft YaHei, PingFang SC, Hiragino Sans GB, Noto Sans CJK SC, Source Han Sans SC, DengXian, SimHei, sans-serif" font-size="15.0" font-weight="400" fill="#5B6675" text-anchor="middle">λ1、λ2、φ、弹道设计压力 p_m</text>
+  <rect x="70.0" y="468.0" width="560" height="76" rx="14" fill="#FFFFFF" stroke="#C3CCD9" stroke-width="1.6" filter="url(#sh)"/>
+  <text x="350.0" y="500.8" font-family="Microsoft YaHei, PingFang SC, Hiragino Sans GB, Noto Sans CJK SC, Source Han Sans SC, DengXian, SimHei, sans-serif" font-size="15.0" font-weight="600" fill="#1F2937" text-anchor="middle">④ 读取火药性质与七孔几何</text>
+  <text x="350.0" y="521.8" font-family="Microsoft YaHei, PingFang SC, Hiragino Sans GB, Noto Sans CJK SC, Source Han Sans SC, DengXian, SimHei, sans-serif" font-size="15.0" font-weight="400" fill="#5B6675" text-anchor="middle">f、k、α、ρ_p、u1、n1、c、D0、β、Π1、Q1</text>
+  <rect x="70.0" y="580.0" width="560" height="76" rx="14" fill="#FFFFFF" stroke="#C3CCD9" stroke-width="1.6" filter="url(#sh)"/>
+  <text x="350.0" y="612.8" font-family="Microsoft YaHei, PingFang SC, Hiragino Sans GB, Noto Sans CJK SC, Source Han Sans SC, DengXian, SimHei, sans-serif" font-size="15.0" font-weight="600" fill="#1F2937" text-anchor="middle">⑤ 推导火药形状特征量</text>
+  <text x="350.0" y="633.8" font-family="Microsoft YaHei, PingFang SC, Hiragino Sans GB, Noto Sans CJK SC, Source Han Sans SC, DengXian, SimHei, sans-serif" font-size="15.0" font-weight="400" fill="#5B6675" text-anchor="middle">χ、λ、μ、ψ_S、Z_b、χ_S、λ_S</text>
+  <rect x="140.0" y="682.0" width="420" height="60" rx="30.0" fill="#E9F7EF" stroke="#1E9E6A" stroke-width="1.6" filter="url(#sh)"/>
+  <text x="350.0" y="717.2" font-family="Microsoft YaHei, PingFang SC, Hiragino Sans GB, Noto Sans CJK SC, Source Han Sans SC, DengXian, SimHei, sans-serif" font-size="15.0" font-weight="600" fill="#1F2937" text-anchor="middle">输出：params 结构体</text>
+  <path d="M 350.0,92.0 L 350.0,132.0" fill="none" stroke="#8A94A3" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#ah)"/>
+  <path d="M 350.0,208.0 L 350.0,244.0" fill="none" stroke="#8A94A3" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#ah)"/>
+  <path d="M 350.0,320.0 L 350.0,356.0" fill="none" stroke="#8A94A3" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#ah)"/>
+  <path d="M 350.0,432.0 L 350.0,468.0" fill="none" stroke="#8A94A3" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#ah)"/>
+  <path d="M 350.0,544.0 L 350.0,580.0" fill="none" stroke="#8A94A3" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#ah)"/>
+  <path d="M 350.0,656.0 L 350.0,682.0" fill="none" stroke="#8A94A3" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#ah)"/>
+</svg>
