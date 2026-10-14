@@ -1,0 +1,37 @@
+# ---- MATLAB / Octave ----
+# Autosave, backup and crash files
+*.asv
+*.m~
+*.autosave
+*.slx.r20*
+*.slxc
+slprj/
+*.mex*
+*.mlappinstall
+*.mltbx
+*.mlproj
+*.prj
+*.sfx/
+*.scc
+codegen/
+
+# Figures / binary exports produced by a run (keep committed figures in docs/)
+*.fig
+*.eps
+*.fig
+*.mat
+*.mdl
+*.slx
+
+# ---- Large binary archives that ship with the original project ----
+*.zip
+*.rar
+*.7z
+
+# ---- Editors / OS ----
+.vscode/
+.idea/
+Thumbs.db
+desktop.ini
+ehthumbs.db
+*~

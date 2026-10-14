@@ -1,0 +1,41 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the accompanying bachelor dissertation (see references below)."
+title: "Interior Ballistics Multi-Objective Optimization (内弹道多目标优化设计)"
+abstract: >-
+  MATLAB implementation accompanying the bachelor dissertation
+  "Development and Practice of Ballistic Design Software"
+  (弹道设计软件开发及实践). The code solves the classical multi-perforated
+  propellant interior ballistics ODE system, determines the propellant web
+  thickness by bisection to match the design chamber pressure, and performs
+  a Pareto-based multi-objective optimization of the charge utilisation
+  coefficient and the web thickness with a dynamic penalty function.
+type: software
+license: MIT
+version: 1.0.0
+date-released: "2025-05-30"
+authors:
+  - family-names: Zhang
+    given-names: Bin
+    alias: 彰彬
+    affiliation: "Nanjing University of Science and Technology, School of Energy and Power Engineering"
+keywords:
+  - interior ballistics
+  - multi-objective optimization
+  - genetic algorithm
+  - gamultiobj
+  - Pareto front
+  - propellant charge design
+  - bisection method
+  - MATLAB
+references:
+  - type: thesis
+    title: "弹道设计软件开发及实践 (Development and Practice of Ballistic Design Software)"
+    authors:
+      - family-names: Zhang
+        given-names: Bin
+        alias: 彰彬
+    institution:
+      name: "Nanjing University of Science and Technology"
+    year: 2025
+    month: 5
+    notes: "Bachelor dissertation, supervised by Prof. Xiaobing Zhang and Prof. Baokui Geng"
