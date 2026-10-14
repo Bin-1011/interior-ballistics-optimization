@@ -91,6 +91,9 @@ interior-ballistics-optimization/
     └── 04-57mm-parameter-variant/  57 mm 高射炮参数版本
 ```
 
+各历史版本的差异说明、量纲注意事项与未归档文件说明见
+**[legacy/README.md](legacy/README.md)**。
+
 ---
 
 ## 环境要求
